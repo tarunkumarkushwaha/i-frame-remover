@@ -4,7 +4,6 @@ let searchInput = document.getElementById('fname')
 
 const remover = () => {
     let input = localStorage.getItem("searchdata") || "any"
-    const start = performance.now();
     for (let i = 0; i < iframes.length; i++) {
         if (iframes[i].getAttribute("src").indexOf((input.toLowerCase())) != -1) {
             let iframeremoved = document.createElement('div')
@@ -12,8 +11,6 @@ const remover = () => {
             document.body.replaceChild(iframeremoved, iframes[i])
         }
     }
-    const end = performance.now();
-    console.log(`Execution time: ${end - start} ms`);
 }
 document.body.onload = remover()
 const clickHandler = () => {
