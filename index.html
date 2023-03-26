@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe remover</title>
+    <script src="script.js" defer></script>
+    <style>
+        body,form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            height: 300px;
+            width: 500px;
+            margin: 10px;
+        }
+
+        input[type=text] {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        input[type=submit] {
+            margin: 10px;
+            padding: 5px 15px;
+            background: #ccc;
+            border: 0 none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action=" ">
+        <input type="text" id="fname" name="fname" placeholder="Text-field"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <iframe src="https://player.vimeo.com/video/810970596?h=c4b2d80def" width="640" height="360" frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/vG9wxvLDTQE"
+        title="Use These HACKS to UPGRADE Your Mindset" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/bYMiq61ctkM"
+        title="Pro Chef Reacts.. Chef Ranveer Brar&#39;s Tawa PIZZA!" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</body>
+
+</html>
